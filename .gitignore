@@ -1,0 +1,50 @@
+# --- Secrets and local settings (never commit) ---
+.env
+.env.*
+*.key
+*.pem
+.huggingface/
+hf_token*
+token*.txt
+.claude/
+CLAUDE.md
+
+# --- Python / environments ---
+__pycache__/
+*.py[cod]
+.venv*/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# --- Large or private material (see plans/20261104.gitrepo.md, OUT list) ---
+outputs/runs/
+outputs/runs_failed/
+outputs/energy/run_*/
+outputs/**/responses.csv
+outputs/hallucination/policy_*
+private_release/
+*_FULL.json
+*_FULL.csv
+data/robust/handwritten/
+data/robust/variants*.json
+data/robust/verification/
+data/robust/review*
+scripts/*midterm*
+midterm_repo/
+
+# --- Model weights and caches ---
+*.safetensors
+*.bin
+*.gguf
+hf_cache/
+hf_*/
+
+# --- Editor / OS ---
+.DS_Store
+.vscode/
+.idea/
+*.log
+
+# --- Source dataset: download from Zenodo (doi:10.5281/zenodo.20810799); never commit ---
+data/raw/

@@ -1,0 +1,6 @@
+Intent-to-SLO benchmark of lightweight language models
+Copyright 2026 Sabbir Ahmed, Hazem Abbas, Salimur Choudhury (School of Computing, Queen's University, Canada)
+
+Code is licensed under the Apache License 2.0 (see LICENSE).
+Data and tables created by this project are licensed under CC BY 4.0 (see LICENSE-DATA.txt).
+The source dataset is by Koushikur Islam and Rodrigo N. Calheiros (Zenodo, doi:10.5281/zenodo.20810799) and is not redistributed here.

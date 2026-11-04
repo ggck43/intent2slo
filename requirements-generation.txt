@@ -1,0 +1,9 @@
+# Re-generate model outputs (tier C, needs a GPU; see README). Versions used by the authors.
+# vllm pins its own torch; install in a fresh virtual environment.
+vllm==0.31.0
+transformers==5.17.0
+huggingface_hub==1.33.0
+numpy==2.3.5
+httpx
+nvidia-ml-py==13.615.71
+pytest==9.1.1
