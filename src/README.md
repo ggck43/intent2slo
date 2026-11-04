@@ -29,4 +29,9 @@ Some comments and docstrings mention "notebook N" or "plans/...". These point to
 | `halluc.py` | Rules that flag emitted constraints against the intent, snapshot and schema (used by the report helpers). |
 | `halluc_analysis.py` | Loads the predictions of every condition and aggregates the hallucination flags. |
 
-The modules for the later research questions (`valid_analysis`, `invalid_analysis`, the hallucination labelling, energy, robustness) are added together with the matching RQ folder.
+## Analysis of one research question
+| File | Purpose |
+|---|---|
+| `valid_analysis.py` | RQ1: builds the numbered result tables (V-01 to V-16) from the model predictions: F1 per model and setup, exact match, explicit versus implicit SLOs, error types. Needs the predictions of the camera-ready archive; the released CSVs in `rq1_performance/results/` are its output. |
+
+The modules for the later research questions (`invalid_analysis`, the hallucination labelling, energy, robustness) are added together with the matching RQ folder.
