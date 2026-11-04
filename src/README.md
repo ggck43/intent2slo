@@ -33,5 +33,6 @@ Some comments and docstrings mention "notebook N" or "plans/...". These point to
 | File | Purpose |
 |---|---|
 | `valid_analysis.py` | RQ1: builds the numbered result tables (V-01 to V-16) from the model predictions: F1 per model and setup, exact match, explicit versus implicit SLOs, error types. Needs the predictions of the camera-ready archive; the released CSVs in `rq1_performance/results/` are its output. |
+| `invalid_analysis.py` | RQ2: builds the numbered result tables (I-01 to I-12) from the predictions on the 195 invalid intents: rejection rate per category, counts, effect of examples and reasoning, conflicts by kind, what the false accepts contain. Needs the predictions of the camera-ready archive; the released CSVs in `rq2_validation/results/` are its output. |
 
-The modules for the later research questions (`invalid_analysis`, the hallucination labelling, energy, robustness) are added together with the matching RQ folder.
+The modules for the later research questions (the hallucination labelling, energy, robustness) are added together with the matching RQ folder.

@@ -1,0 +1,5 @@
+category,lookups and thresholds,lookups and thresholds + placement,lookups only,lookups only + placement,placement only,thresholds only,thresholds only + placement
+ambiguous,42,44,235,94,431,111,232
+conflicting,19,13,133,92,426,133,79
+malformed,21,8,128,107,134,158,51
+unsupported,19,9,84,126,331,28,63

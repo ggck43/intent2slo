@@ -1,0 +1,41 @@
+model,prompt,highest + lowest,edge + cloud both required,upper bound below lower bound,combined (two kinds)
+Qwen3.5-4B,fs3,15.0,9.0,12.0,10.0
+Qwen3.5-4B,fs3 CoT,15.0,9.0,12.0,10.0
+Qwen3.5-4B,zs3,15.0,0.0,0.0,8.0
+Qwen3.5-4B,zs3 CoT,15.0,2.0,11.0,10.0
+Qwen3.5-9B,fs3,12.0,9.0,12.0,10.0
+Qwen3.5-9B,fs3 CoT,15.0,9.0,12.0,10.0
+Qwen3.5-9B,zs3,11.0,0.0,12.0,10.0
+Qwen3.5-9B,zs3 CoT,15.0,9.0,12.0,10.0
+Gemma4-E2B,fs3,0.0,0.0,0.0,0.0
+Gemma4-E2B,fs3 CoT,15.0,5.0,12.0,9.0
+Gemma4-E2B,zs3,0.0,0.0,0.0,0.0
+Gemma4-E2B,zs3 CoT,14.0,7.0,12.0,10.0
+Gemma4-E4B,fs3,11.0,9.0,12.0,0.0
+Gemma4-E4B,fs3 CoT,13.0,7.0,12.0,10.0
+Gemma4-E4B,zs3,15.0,0.0,12.0,5.0
+Gemma4-E4B,zs3 CoT,15.0,2.0,12.0,10.0
+Ministral-3-3B,fs3,15.0,4.0,12.0,5.0
+Ministral-3-3B,fs3 CoT,15.0,5.0,11.0,10.0
+Ministral-3-3B,zs3,7.0,0.0,8.0,5.0
+Ministral-3-3B,zs3 CoT,14.0,5.0,12.0,10.0
+Ministral-3-8B,fs3,15.0,9.0,12.0,10.0
+Ministral-3-8B,fs3 CoT,15.0,10.0,12.0,10.0
+Ministral-3-8B,zs3,0.0,0.0,10.0,1.0
+Ministral-3-8B,zs3 CoT,11.0,5.0,12.0,10.0
+Granite-4.1-3B,fs3,0.0,0.0,7.0,0.0
+Granite-4.1-3B,fs3 CoT,3.0,2.0,12.0,9.0
+Granite-4.1-3B,zs3,0.0,0.0,2.0,0.0
+Granite-4.1-3B,zs3 CoT,7.0,0.0,7.0,7.0
+Granite-4.1-8B,fs3,11.0,9.0,12.0,10.0
+Granite-4.1-8B,fs3 CoT,12.0,8.0,12.0,9.0
+Granite-4.1-8B,zs3,0.0,0.0,12.0,6.0
+Granite-4.1-8B,zs3 CoT,7.0,1.0,12.0,8.0
+Llama-3.2-3B,fs3,0.0,2.0,0.0,0.0
+Llama-3.2-3B,fs3 CoT,2.0,4.0,1.0,0.0
+Llama-3.2-3B,zs3,0.0,0.0,0.0,0.0
+Llama-3.2-3B,zs3 CoT,2.0,3.0,2.0,0.0
+Llama-3.1-8B,fs3,2.0,4.0,0.0,0.0
+Llama-3.1-8B,fs3 CoT,3.0,1.0,12.0,4.0
+Llama-3.1-8B,zs3,0.0,0.0,0.0,0.0
+Llama-3.1-8B,zs3 CoT,2.0,1.0,4.0,1.0
