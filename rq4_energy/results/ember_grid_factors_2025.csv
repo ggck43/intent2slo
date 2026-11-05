@@ -1,0 +1,14 @@
+Area,gCO2/kWh 2025,kg CO2e per kWh,source,downloaded,url
+World,458.5,0.458,"Ember yearly_full_release_long_format.csv, Variable='CO2 intensity', Year=2025",2026-10-26,https://storage.googleapis.com/emb-prod-bkt-publicdata/public-downloads/yearly_full_release_long_format.csv
+EU,209.2,0.209,"Ember yearly_full_release_long_format.csv, Variable='CO2 intensity', Year=2025",2026-10-26,https://storage.googleapis.com/emb-prod-bkt-publicdata/public-downloads/yearly_full_release_long_format.csv
+United States of America,384.4,0.384,"Ember yearly_full_release_long_format.csv, Variable='CO2 intensity', Year=2025",2026-10-26,https://storage.googleapis.com/emb-prod-bkt-publicdata/public-downloads/yearly_full_release_long_format.csv
+Australia,524.6,0.525,"Ember yearly_full_release_long_format.csv, Variable='CO2 intensity', Year=2025",2026-10-26,https://storage.googleapis.com/emb-prod-bkt-publicdata/public-downloads/yearly_full_release_long_format.csv
+India,670.5,0.67,"Ember yearly_full_release_long_format.csv, Variable='CO2 intensity', Year=2025",2026-10-26,https://storage.googleapis.com/emb-prod-bkt-publicdata/public-downloads/yearly_full_release_long_format.csv
+France,41.5,0.042,"Ember yearly_full_release_long_format.csv, Variable='CO2 intensity', Year=2025",2026-10-26,https://storage.googleapis.com/emb-prod-bkt-publicdata/public-downloads/yearly_full_release_long_format.csv
+Norway,28.1,0.028,"Ember yearly_full_release_long_format.csv, Variable='CO2 intensity', Year=2025",2026-10-26,https://storage.googleapis.com/emb-prod-bkt-publicdata/public-downloads/yearly_full_release_long_format.csv
+Sweden,35.4,0.035,"Ember yearly_full_release_long_format.csv, Variable='CO2 intensity', Year=2025",2026-10-26,https://storage.googleapis.com/emb-prod-bkt-publicdata/public-downloads/yearly_full_release_long_format.csv
+China,526.2,0.526,"Ember yearly_full_release_long_format.csv, Variable='CO2 intensity', Year=2025",2026-10-26,https://storage.googleapis.com/emb-prod-bkt-publicdata/public-downloads/yearly_full_release_long_format.csv
+Germany,329.6,0.33,"Ember yearly_full_release_long_format.csv, Variable='CO2 intensity', Year=2025",2026-10-26,https://storage.googleapis.com/emb-prod-bkt-publicdata/public-downloads/yearly_full_release_long_format.csv
+United Kingdom,217.4,0.217,"Ember yearly_full_release_long_format.csv, Variable='CO2 intensity', Year=2025",2026-10-26,https://storage.googleapis.com/emb-prod-bkt-publicdata/public-downloads/yearly_full_release_long_format.csv
+South Africa,699.0,0.699,"Ember yearly_full_release_long_format.csv, Variable='CO2 intensity', Year=2025",2026-10-26,https://storage.googleapis.com/emb-prod-bkt-publicdata/public-downloads/yearly_full_release_long_format.csv
+Poland,590.8,0.591,"Ember yearly_full_release_long_format.csv, Variable='CO2 intensity', Year=2025",2026-10-26,https://storage.googleapis.com/emb-prod-bkt-publicdata/public-downloads/yearly_full_release_long_format.csv

@@ -57,6 +57,6 @@ The notebook `rq1.ipynb` loads the released CSVs, shows Table II and Fig. 2, and
 **Tier C (regenerate with the models).** See the top-level README; needs GPUs and is not bit-for-bit reproducible.
 
 ## Citations
-- Intent Engine: Islam, K., Calheiros, R. N. *Intent Engine*. Journal of Systems Architecture 179 (2026) 103938. doi:10.1016/j.sysarc.2026.103938.
+- Intent Engine: Islam, K., Calheiros, R. N. *Intent Engine: Natural-language Intent Translation for Intent-Driven Orchestration in the Compute Continuum*. Journal of Systems Architecture 179 (2026) 103938. doi:10.1016/j.sysarc.2026.103938.
 - Dataset: Islam, K., Calheiros, R. N. *Natural-Language Intent Translation for Intent-Driven Orchestration in the Compute Continuum Dataset*, version 2, Zenodo. doi:10.5281/zenodo.20810799 (not redistributed here).
 - This paper: to be added.

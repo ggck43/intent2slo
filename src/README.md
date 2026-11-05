@@ -37,5 +37,7 @@ Some comments and docstrings mention "notebook N" or "plans/...". These point to
 |---|---|
 | `valid_analysis.py` | RQ1: builds the numbered result tables (V-01 to V-16) from the model predictions: F1 per model and setup, exact match, explicit versus implicit SLOs, error types. Needs the predictions of the camera-ready archive; the released CSVs in `rq1_performance/results/` are its output. |
 | `invalid_analysis.py` | RQ2: builds the numbered result tables (I-01 to I-12) from the predictions on the 195 invalid intents: rejection rate per category, counts, effect of examples and reasoning, conflicts by kind, what the false accepts contain. Needs the predictions of the camera-ready archive; the released CSVs in `rq2_validation/results/` are its output. |
+| `energy_analysis.py` | RQ4: loads the raw energy measurements of a run, integrates the power trace, finds the steady-state part of a closed-loop window, fits the cost model E = a + c x generated tokens with cross-validation, and finds the Pareto front. Needs the raw data of the camera-ready archive. |
+| `energy.py` | RQ4: draws the intents of the energy measurement (level-balanced valid sample, loop samples, invalid sample) with fixed seeds. |
 
-The modules for the later research questions (energy, robustness) are added together with the matching RQ folder.
+The module for the later research question (robustness) are added together with the matching RQ folder.

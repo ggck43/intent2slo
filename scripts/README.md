@@ -9,6 +9,12 @@ Run all scripts from the repository root. Scripts that generate model outputs ne
 | `run_zs3_full.sh`, `run_fs3_full.sh` | Launch one model on the valid and the invalid intents with the `zs3` / `zs3_cot` or `fs3` / `fs3_cot` prompts (Qwen3.5 and Gemma 4). |
 | `run_models_zs3_full.sh`, `run_models_fs3_full.sh` | The same for Ministral 3, Granite 4.1 and Llama 3. |
 
+## Energy measurement (RQ4)
+| File | Purpose |
+|---|---|
+| `energy_probe2.py` | Starts a `vllm serve` process on one GPU, runs the measurement phases (one request at a time, closed loops of 16 and 64 requests, idle power), reads the NVML energy counter and a power trace, and writes one folder of raw files per model. |
+| `run_energy_full.sh` | Runs `energy_probe2.py` for several models one after the other on one GPU. |
+
 ## Hallucination labels (RQ3)
 | File | Purpose |
 |---|---|
