@@ -1,0 +1,65 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the paper below and the source dataset."
+title: "intent2slo: code and results for lightweight LLMs in intent-to-SLO translation"
+type: software
+authors:
+  - family-names: Ahmed
+    given-names: Sabbir
+    affiliation: "School of Computing, Queen's University, Ontario, Canada"
+  - family-names: Abbas
+    given-names: Hazem
+    affiliation: "School of Computing, Queen's University, Ontario, Canada"
+  - family-names: Choudhury
+    given-names: Salimur
+    affiliation: "School of Computing, Queen's University, Ontario, Canada"
+repository-code: "https://github.com/ggck43/intent2slo"
+license: Apache-2.0
+keywords:
+  - intent-based networking
+  - large language models
+  - QoS provisioning
+  - hallucination
+  - energy efficiency
+  - robustness
+abstract: >-
+  Code, result tables and documentation for a five-dimensional evaluation of ten lightweight open
+  language models (at most 10B parameters, five families) on translating natural-language placement
+  intents into service-level objectives (SLOs): translation performance, intent validation,
+  hallucination, energy and emissions, and robustness to operator phrasing.
+preferred-citation:
+  type: unpublished
+  title: "How Far Can Lightweight LLMs Go in Intent-to-SLO Translation?"
+  authors:
+    - family-names: Ahmed
+      given-names: Sabbir
+    - family-names: Abbas
+      given-names: Hazem
+    - family-names: Choudhury
+      given-names: Salimur
+  year: 2026
+  notes: "Manuscript. The link will be added when the preprint is posted."
+references:
+  - type: data
+    title: "Natural-Language Intent Translation for Intent-Driven Orchestration in the Compute Continuum Dataset"
+    authors:
+      - family-names: Islam
+        given-names: Koushikur
+      - family-names: Calheiros
+        given-names: Rodrigo N.
+    version: "2"
+    date-released: 2026-06-23
+    doi: 10.5281/zenodo.20810799
+    publisher:
+      name: Zenodo
+  - type: article
+    title: "Intent Engine: Natural-language Intent Translation for Intent-Driven Orchestration in the Compute Continuum"
+    authors:
+      - family-names: Islam
+        given-names: Koushikur
+      - family-names: Calheiros
+        given-names: Rodrigo N.
+    journal: "Journal of Systems Architecture"
+    volume: 179
+    start: 103938
+    year: 2026
+    doi: 10.1016/j.sysarc.2026.103938

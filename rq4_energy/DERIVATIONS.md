@@ -10,7 +10,7 @@ All values are **GPU energy only** (NVIDIA H100 NVL, NVML energy counter). Host 
 - The sample size for one request at a time (60 intents) was chosen from an earlier pilot campaign of 16 configurations that is not released: the repeat-to-repeat variation of one intent was 0.2% to 3.2%, the spread across intents (driven by answer length) reached a coefficient of variation of 0.48, and a 95% interval of +-10% of the mean needed a median of 32 intents (at most 90).
 
 ## 2. Energy per intent, one request at a time (Wh)
-**Whole valid set (521 intents): the values of Fig. 6 and of the text ("0.044 to 0.148 Wh without reasoning, 0.18 to 0.58 Wh with it").** For each model the measured requests give a linear cost model E = a + c x (generated tokens) (section 4). The energy of an intent in the accuracy runs is the model's a + c x its generated tokens; the table is the mean over the 521 valid intents. Source: `E-04_energy_and_accuracy_per_cell.csv`, column `Wh per intent (1 at a time)`.
+**Whole valid set (521 intents): the values of Fig. 5 and of the text ("0.044 to 0.148 Wh without reasoning, 0.18 to 0.58 Wh with it").** For each model the measured requests give a linear cost model E = a + c x (generated tokens) (section 4). The energy of an intent in the accuracy runs is the model's a + c x its generated tokens; the table is the mean over the 521 valid intents. Source: `E-04_energy_and_accuracy_per_cell.csv`, column `Wh per intent (1 at a time)`.
 
 | Model | zs | fs | zs-cot | fs-cot |
 |---|---:|---:|---:|---:|

@@ -1,10 +1,10 @@
-"""RQ5 figures of the paper (Section IV-E): Fig. 7 (change in strict F1 on valid intents and in rejection rate on invalid intents for each model and setup,
-C1 to C3 pooled, against the original intents) and Fig. 8 (change in rejection rate per phrasing variant).
+"""RQ5 figures of the paper (Section IV-E): Fig. 6 (change in strict F1 on valid intents and in rejection rate on invalid intents for each model and setup,
+C1 to C3 pooled, against the original intents) and Fig. 7 (change in rejection rate per phrasing variant).
 
 Inputs (released analysis results, in results/):
   overview_all_716_by_model_setup.csv         per configuration: F1 and rejection for the original and for C1+C2+C3 pooled (716 intents)
   H-08_per_model_and_setup_all_intents.csv    per configuration and per variant C1, C2, C3
-Outputs: figures/fig7_opt_i_change_heatmaps.pdf/.png (Fig. 7) and figures/fig7_opt_v2_invalid_bars.pdf/.png (Fig. 8)
+Outputs: figures/fig7_opt_i_change_heatmaps.pdf/.png (Fig. 6) and figures/fig7_opt_v2_invalid_bars.pdf/.png (Fig. 7)
 Run from anywhere: python3 rq5_robustness/make_figures.py
 """
 import sys

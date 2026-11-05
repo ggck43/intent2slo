@@ -11,9 +11,9 @@
 | `zs3_cot` | `zs-cot` |
 | `fs3_cot` | `fs-cot` |
 
-## Figure 6: energy per intent against strict F1
+## Figure 5: energy per intent against strict F1
 
-![Fig. 6](figures/fig6_opt_a_panels.png)
+![Fig. 5](figures/fig6_opt_a_panels.png)
 
 One panel per model; the four points are the four setups, arrows go from the setup without reasoning to the setup with reasoning. Data: `results/E-04_energy_and_accuracy_per_cell.csv`.
 
@@ -40,7 +40,7 @@ Energy per intent in Wh, one request at a time (mean over the 521 valid intents)
 |---|---|
 | `results/` | The 15 result tables E-01 to E-05 (energy, load, cost model, energy against accuracy, daily projection and CO2e) and the grid factors. |
 | `DERIVATIONS.md` | How every number of the paper is computed, with the full tables for all 24 configurations. |
-| `make_figure.py`, `figures/` | Rebuild Fig. 6 from `E-04`. |
+| `make_figure.py`, `figures/` | Rebuild Fig. 5 from `E-04`. |
 | `rq4.ipynb` | Checks each number of the paper's RQ4 text against the result tables. |
 | `build_tables_from_raw_data.py` | Rebuilds the 15 tables from the raw measurements (**needs the raw data**, released with the camera-ready archive). |
 | `../scripts/energy_probe2.py`, `../scripts/run_energy_full.sh` | The measurement tool and its launcher (GPU needed). |

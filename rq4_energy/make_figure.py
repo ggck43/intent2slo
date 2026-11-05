@@ -1,4 +1,4 @@
-"""RQ4 figure of the paper (Section IV-D, Fig. 6): energy per intent against strict F1, one panel per model, four setups, arrows from the
+"""RQ4 figure of the paper (Section IV-D, Fig. 5): energy per intent against strict F1, one panel per model, four setups, arrows from the
 setup without reasoning to the setup with reasoning.
 
 Input (released analysis result, in results/): E-04_energy_and_accuracy_per_cell.csv

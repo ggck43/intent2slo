@@ -11,11 +11,11 @@
 | `zs3 CoT` | `zs-cot` |
 | `fs3 CoT` | `fs-cot` |
 
-**Data released here.** Only a sample: [`../data/robust/robust_benchmark_sample.json`](../data/robust/robust_benchmark_sample.json) (and `.csv`) holds 10 intents with their C1, C2 and C3 variants (30 rows). **The full benchmark of 2,148 variants is available on request: sabbir.ahmed@queensu.ca.** The result tables in this folder contain no intent texts.
+**Data released here.** Only a sample: [`../data/robust/robust_benchmark_sample.json`](../data/robust/robust_benchmark_sample.json) (and `.csv`) holds 10 intents with their C1, C2 and C3 variants (30 rows). **The full benchmark of 2,148 variants is available on request: sabbir.ahmedqueensu.ca.** The result tables in this folder contain no intent texts.
 
-## Figure 7: change per model and setup
+## Figure 6: change per model and setup
 
-![Fig. 7](figures/fig7_opt_i_change_heatmaps.png)
+![Fig. 6](figures/fig7_opt_i_change_heatmaps.png)
 
 Change in points between the variants C1 to C3 (pooled) and the original intents, for strict F1 on valid intents (left) and rejection rate on invalid intents (right). Data: `results/overview_all_716_by_model_setup.csv`.
 
@@ -37,9 +37,9 @@ Rejection rate on invalid intents, original -> variants (change in points):
 | Gemma-4-E2B | 0.118 -> 0.031 (-8.7) | 0.015 -> 0.017 (+0.2) | 0.636 -> 0.487 (-14.9) | 0.872 -> 0.848 (-2.4) |
 | Gemma-4-E4B | 0.800 -> 0.612 (-18.8) | 0.882 -> 0.808 (-7.4) | 0.754 -> 0.701 (-5.3) | 0.949 -> 0.834 (-11.4) |
 
-## Figure 8: change in rejection per variant
+## Figure 7: change in rejection per variant
 
-![Fig. 8](figures/fig7_opt_v2_invalid_bars.png)
+![Fig. 7](figures/fig7_opt_v2_invalid_bars.png)
 
 Change in rejection rate of the invalid intents for each phrasing variant. Data: `results/H-08_per_model_and_setup_all_intents.csv` (per configuration and variant; it also holds the share of valid variants rejected and the F1 per variant, and rows with the mean of the four models).
 
@@ -65,7 +65,7 @@ Rejection rate per invalid category, pooled over the 16 configurations (`results
 | Path | Purpose |
 |---|---|
 | `results/` | The four result tables behind the figures and findings (no texts). |
-| `make_figures.py`, `figures/` | Rebuild Fig. 7 and Fig. 8 from the result tables. |
+| `make_figures.py`, `figures/` | Rebuild Fig. 6 and Fig. 7 from the result tables. |
 | `rq5.ipynb` | Checks each number of the paper's RQ5 text against the result tables and checks the released sample. |
 | `../data/robust/` | The 30-row sample and its README (fields, variants, licence, contact for the full set). |
 
