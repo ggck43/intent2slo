@@ -1,0 +1,737 @@
+[
+ {
+  "parent_index": 158,
+  "source": "real",
+  "validity": "valid",
+  "invalid_category": null,
+  "level": 1,
+  "variant_type": "C1",
+  "variant_text": "I'm adding the registry's CPU rule to the alert catalogue. Please schedule descartesresearch/teastore-registry and keep CPU utilization below 50%. I'll enter your answer into the catalogue this afternoon.",
+  "original_expression": "Please schedule descartesresearch/teastore-registry and keep CPU utilization below 50% .",
+  "ground_truth_slos": [
+   {
+    "metric": "cpu_utilization",
+    "target": {
+     "cmp": "<=",
+     "op": null,
+     "value": 50
+    },
+    "type": "dynamic_compute_resource",
+    "unit": "percent"
+   }
+  ],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 158,
+  "source": "real",
+  "validity": "valid",
+  "invalid_category": null,
+  "level": 1,
+  "variant_type": "C2",
+  "variant_text": "The alert catalogue has no CPU rule for the registry. Keep CPU utilization under 50% when you schedule descartesresearch/teastore-registry.",
+  "original_expression": "Please schedule descartesresearch/teastore-registry and keep CPU utilization below 50% .",
+  "ground_truth_slos": [
+   {
+    "metric": "cpu_utilization",
+    "target": {
+     "cmp": "<=",
+     "op": null,
+     "value": 50
+    },
+    "type": "dynamic_compute_resource",
+    "unit": "percent"
+   }
+  ],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 158,
+  "source": "real",
+  "validity": "valid",
+  "invalid_category": null,
+  "level": 1,
+  "variant_type": "C3",
+  "variant_text": "Service: descartesresearch/teastore-registry\n- Cpu: cpu utilizaton must to be below 50%\n- Task: pls schedual it\nAlert catalogue is for today so asap pls. Thanks you, sory for my english.",
+  "original_expression": "Please schedule descartesresearch/teastore-registry and keep CPU utilization below 50% .",
+  "ground_truth_slos": [
+   {
+    "metric": "cpu_utilization",
+    "target": {
+     "cmp": "<=",
+     "op": null,
+     "value": 50
+    },
+    "type": "dynamic_compute_resource",
+    "unit": "percent"
+   }
+  ],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 154,
+  "source": "real",
+  "validity": "valid",
+  "invalid_category": null,
+  "level": 2,
+  "variant_type": "C1",
+  "variant_text": "A colleague from finance asked what the image service needs, and I'd like to give a short, exact answer. I would like descartesresearch/teastore-image placed on the edge layer, on a node with at least 3 CPU cores. I'll pass your answer to finance after lunch.",
+  "original_expression": "I would like to place descartesresearch/teastore-image and schedule it on the edge layer and make sure the target node has at least 3 CPU cores.",
+  "ground_truth_slos": [
+   {
+    "metric": null,
+    "target": {
+     "cmp": null,
+     "op": "set",
+     "value": "edge"
+    },
+    "type": "placement_location",
+    "unit": null
+   },
+   {
+    "metric": "cpu_capacity",
+    "target": {
+     "cmp": null,
+     "op": ">=",
+     "value": 3000
+    },
+    "type": "static_compute_resource",
+    "unit": "millicores"
+   }
+  ],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 154,
+  "source": "real",
+  "validity": "valid",
+  "invalid_category": null,
+  "level": 2,
+  "variant_type": "C2",
+  "variant_text": "Finance asked what the image service needs. Make sure the node has 3 CPU cores or more, and schedule descartesresearch/teastore-image on the edge layer.",
+  "original_expression": "I would like to place descartesresearch/teastore-image and schedule it on the edge layer and make sure the target node has at least 3 CPU cores.",
+  "ground_truth_slos": [
+   {
+    "metric": null,
+    "target": {
+     "cmp": null,
+     "op": "set",
+     "value": "edge"
+    },
+    "type": "placement_location",
+    "unit": null
+   },
+   {
+    "metric": "cpu_capacity",
+    "target": {
+     "cmp": null,
+     "op": ">=",
+     "value": 3000
+    },
+    "type": "static_compute_resource",
+    "unit": "millicores"
+   }
+  ],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 154,
+  "source": "real",
+  "validity": "valid",
+  "invalid_category": null,
+  "level": 2,
+  "variant_type": "C3",
+  "variant_text": "service: descartesresearch/teastore-image\n- Layer: edge layer\n- Cpu: node must to have min 3 cpu cores\n- Task: pls place it\nFinance wait for it so asap pls. Thanks you, sory for typos.",
+  "original_expression": "I would like to place descartesresearch/teastore-image and schedule it on the edge layer and make sure the target node has at least 3 CPU cores.",
+  "ground_truth_slos": [
+   {
+    "metric": null,
+    "target": {
+     "cmp": null,
+     "op": "set",
+     "value": "edge"
+    },
+    "type": "placement_location",
+    "unit": null
+   },
+   {
+    "metric": "cpu_capacity",
+    "target": {
+     "cmp": null,
+     "op": ">=",
+     "value": 3000
+    },
+    "type": "static_compute_resource",
+    "unit": "millicores"
+   }
+  ],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 180,
+  "source": "real",
+  "validity": "valid",
+  "invalid_category": null,
+  "level": 3,
+  "variant_type": "C1",
+  "variant_text": "We are retiring a couple of old machines at the end of the month, and the recommender is waiting for a new home. Please run descartesresearch/teastore-recommender on the edge side with a node that offers at least 2 GB of memory, and choose the one with the highest storage capacity. I'll pass the result to the migration team tomorrow, so thank you for a quick reply.",
+  "original_expression": "For descartesresearch/teastore-recommender, please run it on the edge side, make sure the target node has at least 2 GB of memory, and pick the node with the highest storage capacity.",
+  "ground_truth_slos": [
+   {
+    "metric": null,
+    "target": {
+     "cmp": null,
+     "op": "set",
+     "value": "edge"
+    },
+    "type": "placement_location",
+    "unit": null
+   },
+   {
+    "metric": "memory_capacity",
+    "target": {
+     "cmp": null,
+     "op": ">=",
+     "value": 2147483648
+    },
+    "type": "static_compute_resource",
+    "unit": "bytes"
+   },
+   {
+    "metric": "storage_capacity",
+    "target": {
+     "cmp": ">=",
+     "op": "highest",
+     "value": 62220779520
+    },
+    "type": "static_compute_resource",
+    "unit": "bytes"
+   }
+  ],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 180,
+  "source": "real",
+  "validity": "valid",
+  "invalid_category": null,
+  "level": 3,
+  "variant_type": "C2",
+  "variant_text": "The recommender has moved between hosts twice since spring and the team wants it settled. Choose the node with the highest storage capacity for descartesresearch/teastore-recommender, make sure it has 2 GB of memory or more, and keep it on the edge side.",
+  "original_expression": "For descartesresearch/teastore-recommender, please run it on the edge side, make sure the target node has at least 2 GB of memory, and pick the node with the highest storage capacity.",
+  "ground_truth_slos": [
+   {
+    "metric": null,
+    "target": {
+     "cmp": null,
+     "op": "set",
+     "value": "edge"
+    },
+    "type": "placement_location",
+    "unit": null
+   },
+   {
+    "metric": "memory_capacity",
+    "target": {
+     "cmp": null,
+     "op": ">=",
+     "value": 2147483648
+    },
+    "type": "static_compute_resource",
+    "unit": "bytes"
+   },
+   {
+    "metric": "storage_capacity",
+    "target": {
+     "cmp": ">=",
+     "op": "highest",
+     "value": 62220779520
+    },
+    "type": "static_compute_resource",
+    "unit": "bytes"
+   }
+  ],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 180,
+  "source": "real",
+  "validity": "valid",
+  "invalid_category": null,
+  "level": 3,
+  "variant_type": "C3",
+  "variant_text": "Service: descartesresearch/teastore-recommender\n- Layr: edge side pls\n- Memory: node need at least 2 GB of mem\n- Storage: pick the node what have the highest storge capacity\nMigration is soon so asap if you can. Thx, i really apreciate it.",
+  "original_expression": "For descartesresearch/teastore-recommender, please run it on the edge side, make sure the target node has at least 2 GB of memory, and pick the node with the highest storage capacity.",
+  "ground_truth_slos": [
+   {
+    "metric": null,
+    "target": {
+     "cmp": null,
+     "op": "set",
+     "value": "edge"
+    },
+    "type": "placement_location",
+    "unit": null
+   },
+   {
+    "metric": "memory_capacity",
+    "target": {
+     "cmp": null,
+     "op": ">=",
+     "value": 2147483648
+    },
+    "type": "static_compute_resource",
+    "unit": "bytes"
+   },
+   {
+    "metric": "storage_capacity",
+    "target": {
+     "cmp": ">=",
+     "op": "highest",
+     "value": 62220779520
+    },
+    "type": "static_compute_resource",
+    "unit": "bytes"
+   }
+  ],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 632,
+  "source": "synthetic",
+  "validity": "valid",
+  "invalid_category": null,
+  "level": 4,
+  "variant_type": "C1",
+  "variant_text": "The image service is the last open item of the quarter's readiness list, and I'd like to describe it in full. Go ahead and place descartesresearch/teastore-image and run it on the cloud side, on a node with at least 30 GB of storage capacity, keeping storage utilization below 55%, and pick the node with the highest current CPU utilization. I'll close the list with your answer.",
+  "original_expression": "Go ahead and place descartesresearch/teastore-image and run it on the cloud side, make sure the target node has at least 30 GB of storage capacity, keep storage utilization below 55%, and pick the node with the highest current CPU utilization.",
+  "ground_truth_slos": [
+   {
+    "metric": null,
+    "target": {
+     "cmp": null,
+     "op": "set",
+     "value": "cloud"
+    },
+    "type": "placement_location",
+    "unit": null
+   },
+   {
+    "metric": "storage_capacity",
+    "target": {
+     "cmp": null,
+     "op": ">=",
+     "value": 32212254720
+    },
+    "type": "static_compute_resource",
+    "unit": "bytes"
+   },
+   {
+    "metric": "cpu_utilization",
+    "target": {
+     "cmp": ">=",
+     "op": "highest",
+     "value": 9.777337950000001
+    },
+    "type": "dynamic_compute_resource",
+    "unit": "percent"
+   },
+   {
+    "metric": "storage_utilization",
+    "target": {
+     "cmp": "<=",
+     "op": null,
+     "value": 55
+    },
+    "type": "dynamic_compute_resource",
+    "unit": "percent"
+   }
+  ],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 632,
+  "source": "synthetic",
+  "validity": "valid",
+  "invalid_category": null,
+  "level": 4,
+  "variant_type": "C2",
+  "variant_text": "The quarter's readiness list ends with the image service. Pick the node with the highest current CPU utilization for descartesresearch/teastore-image, make sure it has 30 GB of storage capacity or more, keep storage utilization under 55%, and run it on the cloud side.",
+  "original_expression": "Go ahead and place descartesresearch/teastore-image and run it on the cloud side, make sure the target node has at least 30 GB of storage capacity, keep storage utilization below 55%, and pick the node with the highest current CPU utilization.",
+  "ground_truth_slos": [
+   {
+    "metric": null,
+    "target": {
+     "cmp": null,
+     "op": "set",
+     "value": "cloud"
+    },
+    "type": "placement_location",
+    "unit": null
+   },
+   {
+    "metric": "storage_capacity",
+    "target": {
+     "cmp": null,
+     "op": ">=",
+     "value": 32212254720
+    },
+    "type": "static_compute_resource",
+    "unit": "bytes"
+   },
+   {
+    "metric": "cpu_utilization",
+    "target": {
+     "cmp": ">=",
+     "op": "highest",
+     "value": 9.777337950000001
+    },
+    "type": "dynamic_compute_resource",
+    "unit": "percent"
+   },
+   {
+    "metric": "storage_utilization",
+    "target": {
+     "cmp": "<=",
+     "op": null,
+     "value": 55
+    },
+    "type": "dynamic_compute_resource",
+    "unit": "percent"
+   }
+  ],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 632,
+  "source": "synthetic",
+  "validity": "valid",
+  "invalid_category": null,
+  "level": 4,
+  "variant_type": "C3",
+  "variant_text": "service name: descartesresearch/teastore-image\n- Layr: cloud side\n- Storage: node must to have min 30 GB of storge capacity\n- Storge load: storage utilizaton below 55%\n- Cpu load: pick the node what have the highest current cpu utilization\nReadiness list is open so asap pls. Thx a lot, sory for my english.",
+  "original_expression": "Go ahead and place descartesresearch/teastore-image and run it on the cloud side, make sure the target node has at least 30 GB of storage capacity, keep storage utilization below 55%, and pick the node with the highest current CPU utilization.",
+  "ground_truth_slos": [
+   {
+    "metric": null,
+    "target": {
+     "cmp": null,
+     "op": "set",
+     "value": "cloud"
+    },
+    "type": "placement_location",
+    "unit": null
+   },
+   {
+    "metric": "storage_capacity",
+    "target": {
+     "cmp": null,
+     "op": ">=",
+     "value": 32212254720
+    },
+    "type": "static_compute_resource",
+    "unit": "bytes"
+   },
+   {
+    "metric": "cpu_utilization",
+    "target": {
+     "cmp": ">=",
+     "op": "highest",
+     "value": 9.777337950000001
+    },
+    "type": "dynamic_compute_resource",
+    "unit": "percent"
+   },
+   {
+    "metric": "storage_utilization",
+    "target": {
+     "cmp": "<=",
+     "op": null,
+     "value": 55
+    },
+    "type": "dynamic_compute_resource",
+    "unit": "percent"
+   }
+  ],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 128,
+  "source": "real",
+  "validity": "valid",
+  "invalid_category": null,
+  "level": 5,
+  "variant_type": "C1",
+  "variant_text": "The login service is the last open decision before the freeze, and I'd like a firm answer. I'm looking to place descartesresearch/teastore-auth on the edge layer and, among those nodes, I'd like the one with the lowest port utilization. I'll note your answer in the freeze document.",
+  "original_expression": "I'm looking to place descartesresearch/teastore-auth; please favor the option where you schedule it on the edge layer while you also pick the node with the lowest port utilization.",
+  "ground_truth_slos": [
+   {
+    "metric": null,
+    "target": {
+     "cmp": null,
+     "op": "set",
+     "value": "edge"
+    },
+    "type": "placement_location",
+    "unit": null
+   },
+   {
+    "metric": "port_utilization",
+    "target": {
+     "cmp": "<=",
+     "op": "lowest",
+     "value": 0.048828125
+    },
+    "type": "node_network_resource",
+    "unit": "percent"
+   }
+  ],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 128,
+  "source": "real",
+  "validity": "valid",
+  "invalid_category": null,
+  "level": 5,
+  "variant_type": "C2",
+  "variant_text": "The freeze document waits only for the login service. The node with the lowest port utilization is what I'd like for descartesresearch/teastore-auth, scheduled on the edge layer.",
+  "original_expression": "I'm looking to place descartesresearch/teastore-auth; please favor the option where you schedule it on the edge layer while you also pick the node with the lowest port utilization.",
+  "ground_truth_slos": [
+   {
+    "metric": null,
+    "target": {
+     "cmp": null,
+     "op": "set",
+     "value": "edge"
+    },
+    "type": "placement_location",
+    "unit": null
+   },
+   {
+    "metric": "port_utilization",
+    "target": {
+     "cmp": "<=",
+     "op": "lowest",
+     "value": 0.048828125
+    },
+    "type": "node_network_resource",
+    "unit": "percent"
+   }
+  ],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 128,
+  "source": "real",
+  "validity": "valid",
+  "invalid_category": null,
+  "level": 5,
+  "variant_type": "C3",
+  "variant_text": "service name: descartesresearch/teastore-auth\n- Layer: edge layer pls\n- Port: pick the node what have the lowest port utilizaton\n- Task: place it please\nFreeze document is open so asap pls. Thx you very much, sory for typos.",
+  "original_expression": "I'm looking to place descartesresearch/teastore-auth; please favor the option where you schedule it on the edge layer while you also pick the node with the lowest port utilization.",
+  "ground_truth_slos": [
+   {
+    "metric": null,
+    "target": {
+     "cmp": null,
+     "op": "set",
+     "value": "edge"
+    },
+    "type": "placement_location",
+    "unit": null
+   },
+   {
+    "metric": "port_utilization",
+    "target": {
+     "cmp": "<=",
+     "op": "lowest",
+     "value": 0.048828125
+    },
+    "type": "node_network_resource",
+    "unit": "percent"
+   }
+  ],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 644,
+  "source": "synthetic",
+  "validity": "invalid",
+  "invalid_category": "ambiguous",
+  "level": null,
+  "variant_type": "C1",
+  "variant_text": "Persistence is the one service without a nominated home, and I'd like to propose one at the next sync. Start descartesresearch/teastore-persistence in the spot that seems to offer good headroom and acceptable behavior across the board. I'll read your answer before the sync.",
+  "original_expression": "Run descartesresearch/teastore-persistence in the spot that appears to offer good headroom and acceptable behavior across the board.",
+  "ground_truth_slos": [],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 644,
+  "source": "synthetic",
+  "validity": "invalid",
+  "invalid_category": "ambiguous",
+  "level": null,
+  "variant_type": "C2",
+  "variant_text": "No home has been nominated for the persistence service. Good headroom and acceptable behavior across the board are what I want, so run descartesresearch/teastore-persistence in the spot that seems to offer them.",
+  "original_expression": "Run descartesresearch/teastore-persistence in the spot that appears to offer good headroom and acceptable behavior across the board.",
+  "ground_truth_slos": [],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 644,
+  "source": "synthetic",
+  "validity": "invalid",
+  "invalid_category": "ambiguous",
+  "level": null,
+  "variant_type": "C3",
+  "variant_text": "service name: descartesresearch/teastore-persistence\n- Spot: the one what offer good headroom\n- Behavior: acceptable across the board\nSync is soon so asap pls. Thx a lot, i apreciate.",
+  "original_expression": "Run descartesresearch/teastore-persistence in the spot that appears to offer good headroom and acceptable behavior across the board.",
+  "ground_truth_slos": [],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 692,
+  "source": "synthetic",
+  "validity": "invalid",
+  "invalid_category": "conflicting",
+  "level": null,
+  "variant_type": "C1",
+  "variant_text": "I'm preparing the list of requests that cannot be satisfied, and the login service has one. When descartesresearch/teastore-auth is placed, its CPU utilization should stay under 25% and also over 80%, and both should hold on the edge and the cloud only. I'll read your answer tomorrow and add it to the list.",
+  "original_expression": "When placing descartesresearch/teastore-auth, keep CPU utilization below 25% while also requiring it to stay above 80%, and do both on edge and cloud only.",
+  "ground_truth_slos": [],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 692,
+  "source": "synthetic",
+  "validity": "invalid",
+  "invalid_category": "conflicting",
+  "level": null,
+  "variant_type": "C2",
+  "variant_text": "A request for the login service cannot be satisfied as written. Edge and cloud only, and CPU utilization both below 25% and above 80%: that is how descartesresearch/teastore-auth should be placed.",
+  "original_expression": "When placing descartesresearch/teastore-auth, keep CPU utilization below 25% while also requiring it to stay above 80%, and do both on edge and cloud only.",
+  "ground_truth_slos": [],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 692,
+  "source": "synthetic",
+  "validity": "invalid",
+  "invalid_category": "conflicting",
+  "level": null,
+  "variant_type": "C3",
+  "variant_text": "service name: descartesresearch/teastore-auth\n- Layer: edge and cloud only\n- CPU: the cpu utilizaton below 25%\n- CPU also: and must to stay above 80% too\nUnsatisfiable list is for tomorow so asap pls. Thx you, sory for typos.",
+  "original_expression": "When placing descartesresearch/teastore-auth, keep CPU utilization below 25% while also requiring it to stay above 80%, and do both on edge and cloud only.",
+  "ground_truth_slos": [],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 332,
+  "source": "synthetic",
+  "validity": "invalid",
+  "invalid_category": "malformed",
+  "level": null,
+  "variant_type": "C1",
+  "variant_text": "I'm typing this on the escalator and the image service is what I wanted to ask about. descartesresearch/teastore-image edge, cpu, words broken, sentence and I'll read your answer when I'm off the escalator. That is when I continue with my day.",
+  "original_expression": "descartesresearch/teastore-image edge cpu words broken sentence and",
+  "ground_truth_slos": [],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 332,
+  "source": "synthetic",
+  "validity": "invalid",
+  "invalid_category": "malformed",
+  "level": null,
+  "variant_type": "C2",
+  "variant_text": "The image service was mentioned on the way to the meeting. cpu, edge, sentence and words broken, descartesresearch/teastore-image",
+  "original_expression": "descartesresearch/teastore-image edge cpu words broken sentence and",
+  "ground_truth_slos": [],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 332,
+  "source": "synthetic",
+  "validity": "invalid",
+  "invalid_category": "malformed",
+  "level": null,
+  "variant_type": "C3",
+  "variant_text": "Service: descartesresearch/teastore-image\n- Layer: edge\n- Cpu: ...\n- Text: words broken sentence and\nTyping on escalator, thx for the patient. I read the anwser later pls.",
+  "original_expression": "descartesresearch/teastore-image edge cpu words broken sentence and",
+  "ground_truth_slos": [],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 653,
+  "source": "synthetic",
+  "validity": "invalid",
+  "invalid_category": "unsupported",
+  "level": null,
+  "variant_type": "C1",
+  "variant_text": "An investor asked how the registry is run, and I'm drafting a few lines for the data room. Run descartesresearch/teastore-registry where the carbon impact is minimal, the regulatory posture is strongest and trust is the highest. I'll put your answer into the data room.",
+  "original_expression": "Run descartesresearch/teastore-registry where carbon impact is minimal, regulatory posture is strongest, and trust is highest.",
+  "ground_truth_slos": [],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 653,
+  "source": "synthetic",
+  "validity": "invalid",
+  "invalid_category": "unsupported",
+  "level": null,
+  "variant_type": "C2",
+  "variant_text": "An investor asked about the registry. Highest trust, the strongest regulatory posture and minimal carbon impact: run descartesresearch/teastore-registry where these hold.",
+  "original_expression": "Run descartesresearch/teastore-registry where carbon impact is minimal, regulatory posture is strongest, and trust is highest.",
+  "ground_truth_slos": [],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 653,
+  "source": "synthetic",
+  "validity": "invalid",
+  "invalid_category": "unsupported",
+  "level": null,
+  "variant_type": "C3",
+  "variant_text": "Service: descartesresearch/teastore-registry\n- Carbon: minimal impact\n- Regulation: strongest regulatory posture\n- Trust: highest\nData room is open so asap pls. Thx you, sory for typos.",
+  "original_expression": "Run descartesresearch/teastore-registry where carbon impact is minimal, regulatory posture is strongest, and trust is highest.",
+  "ground_truth_slos": [],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 22,
+  "source": "real",
+  "validity": "invalid",
+  "invalid_category": "malformed",
+  "level": null,
+  "variant_type": "C1",
+  "variant_text": "I'm typing this on a shaky train and the persistence service is on my mind. descartesresearch/teastore-persistence put where cpu is under and storage ... ??? I'll read your answer when I arrive. That is when I'll continue my notes.",
+  "original_expression": "descartesresearch/teastore-persistence put where cpu under and storage ... ???",
+  "ground_truth_slos": [],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 22,
+  "source": "real",
+  "validity": "invalid",
+  "invalid_category": "malformed",
+  "level": null,
+  "variant_type": "C2",
+  "variant_text": "The persistence service was the subject of a short chat on the train. storage ... ??? and cpu under, put descartesresearch/teastore-persistence where",
+  "original_expression": "descartesresearch/teastore-persistence put where cpu under and storage ... ???",
+  "ground_truth_slos": [],
+  "generated_by": "claude-sonnet-5-5"
+ },
+ {
+  "parent_index": 22,
+  "source": "real",
+  "validity": "invalid",
+  "invalid_category": "malformed",
+  "level": null,
+  "variant_type": "C3",
+  "variant_text": "service name: descartesresearch/teastore-persistence\n- put: where\n- cpu: under ...\n- storage: ... ???\nOn the train, thx for the patient. I read the anwser when i arive pls.",
+  "original_expression": "descartesresearch/teastore-persistence put where cpu under and storage ... ???",
+  "ground_truth_slos": [],
+  "generated_by": "claude-sonnet-5-5"
+ }
+]
