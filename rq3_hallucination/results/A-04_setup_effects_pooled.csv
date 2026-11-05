@@ -1,0 +1,6 @@
+effect,mean_diff,models_lower
+examples (fs3 - zs3),-0.0854,8
+reasoning (zs3 CoT - zs3),-0.1489,10
+both (fs3 CoT - zs3),-0.2106,10
+reasoning on examples (fs3 CoT - fs3),-0.1253,9
+examples on reasoning (fs3 CoT - zs3 CoT),-0.0618,9

@@ -1,0 +1,16 @@
+family,scope,small,large,diff_large_minus_small
+Qwen,all,Qwen3.5-4B,Qwen3.5-9B,0.0244
+Qwen,valid,Qwen3.5-4B,Qwen3.5-9B,0.0273
+Qwen,invalid,Qwen3.5-4B,Qwen3.5-9B,0.0168
+Gemma,all,Gemma4-E2B,Gemma4-E4B,-0.2092
+Gemma,valid,Gemma4-E2B,Gemma4-E4B,-0.164
+Gemma,invalid,Gemma4-E2B,Gemma4-E4B,-0.3295
+Ministral,all,Ministral-3-3B,Ministral-3-8B,-0.2291
+Ministral,valid,Ministral-3-3B,Ministral-3-8B,-0.2858
+Ministral,invalid,Ministral-3-3B,Ministral-3-8B,-0.0743
+Granite,all,Granite-4.1-3B,Granite-4.1-8B,-0.228
+Granite,valid,Granite-4.1-3B,Granite-4.1-8B,-0.2926
+Granite,invalid,Granite-4.1-3B,Granite-4.1-8B,-0.0552
+Llama,all,Llama-3.2-3B,Llama-3.1-8B,-0.3929
+Llama,valid,Llama-3.2-3B,Llama-3.1-8B,-0.4185
+Llama,invalid,Llama-3.2-3B,Llama-3.1-8B,-0.3214

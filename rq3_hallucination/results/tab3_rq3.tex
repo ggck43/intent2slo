@@ -1,0 +1,27 @@
+% Qualitative hallucination examples (RQ3). Source: outputs/hallucination/policy_v2j_constraints.csv and the run predictions
+% (records #215, #592, #98; selected with the user on 2026-10-28). Byte values shown in GiB (1 GiB = 2^30 B), service names as svc.
+% 2026-10-30: "Correct with" column dropped (user decision); widths redistributed over four columns.
+\resizebox{0.9\textwidth}{!}{%
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.30\textwidth}>{\raggedright\arraybackslash}p{0.18\textwidth}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.20\textwidth}@{}}
+\toprule
+Intent (abridged) & Ground-truth SLOs & Model (setup): hallucinated SLO & Why it is a hallucination \\
+\midrule
+``Deploy svc \ldots\ at least 50\,GB of storage capacity and pick the node with the lowest current memory utilization'' (valid) &
+storage cap.\ $\geq$ 50\,GiB; memory util.\ $\leq$ [lowest] 34.27\,\% &
+Qwen3.5-9B (\texttt{zs}): memory util.\ $\leq$ [lowest] \textbf{18.0}\,\% &
+18.0 is the \emph{storage} utilization of the correct node: right node, wrong metric \\
+\addlinespace[2pt]
+% Row for record #592 (ambiguous invalid intent, Gemma-4-E2B zs) dropped 2026-10-30 (user: "best overall" could be read as a capacity request).
+% ``Deploy svc in whichever place looks best overall for performance and room to grow'' (invalid, ambiguous) &
+% none (reject) &
+% Gemma-4-E2B (\texttt{zs}): CPU, memory and storage capacity, each $\geq$ [highest] (4{,}000\,m, 7.75\,GiB, 57.9\,GiB) &
+% three capacity requirements that the text never names &
+% Gemma-4-E2B (\texttt{zs-cot}, \texttt{fs-cot}): rejected \\
+% \addlinespace[2pt]
+``I would like to place svc and keep CPU utilization below 40\,\%'' (valid) &
+CPU util.\ $\leq$ 40\,\% &
+Qwen3.5-9B (\texttt{fs-cot}): placement = \textbf{edge} &
+a placement layer the intent does not name \\
+\bottomrule
+\end{tabular}
+}
